@@ -1,0 +1,31 @@
+@use "variables" as v;
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+
+body {
+  font-family: v.$font-principal;
+  background-color: #daf0ff;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
