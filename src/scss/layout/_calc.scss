@@ -1,6 +1,6 @@
 .calc {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
@@ -28,6 +28,7 @@
     outline: none;
     border-radius: 2rem;
     background-color: #3e3f42;
+    transition: all 400ms;
 
     &:hover {
       background-color: #f0f7ee;
