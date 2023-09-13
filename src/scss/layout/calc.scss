@@ -11,7 +11,8 @@
   border-radius: 1rem;
 
   .display {
-    grid-column: 1/ -1;
+    max-width: 25rem;
+    grid-column: 1/ 5;
     background-color: v.$secundary-color;
     font-family: "Chakra Petch", sans-serif;
     font-weight: bold;
@@ -20,6 +21,8 @@
     text-align: right;
     border-radius: 1rem;
     margin-bottom: 1.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
   }
 
   .button {
