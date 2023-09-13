@@ -1,16 +1,19 @@
+@use "../base/variables" as v;
+
 .footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 2rem;
+  color: v.$light;
+  font-size: 1.5rem;
   font-weight: bold;
 
   a {
     text-decoration: none;
-    color: #000;
+    color: v.$light;
 
     &:hover {
-      color: #00b4d8;
+      color: v.$orange;
     }
   }
 }

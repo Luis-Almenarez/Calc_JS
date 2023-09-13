@@ -14,8 +14,11 @@ html {
 }
 
 body {
-  font-family: v.$font-principal;
-  background-color: #daf0ff;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: v.$font-secundaria;
+  background-color: v.$principal-color;
 }
 
 main {

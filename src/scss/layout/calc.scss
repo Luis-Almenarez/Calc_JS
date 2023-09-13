@@ -1,0 +1,55 @@
+@use "../base/variables" as v;
+
+.calc {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  background-color: v.$terciary-color;
+  color: v.$light;
+  border-radius: 1rem;
+
+  .display {
+    grid-column: 1/ -1;
+    background-color: v.$secundary-color;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: right;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .button {
+    display: grid;
+    place-items: center;
+    background-color: v.$terciary-color;
+    color: #fff;
+    border: none;
+    padding: 2rem;
+    border-radius: 1rem 1.5rem;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 200ms;
+
+    &:hover {
+      background-color: v.$hover-color;
+    }
+  }
+
+  #zero {
+    grid-column: span 2;
+  }
+
+  #equal {
+    background-color: v.$orange;
+    grid-row: span 2;
+
+    &:hover {
+      background-color: v.$orange-hover;
+    }
+  }
+}
